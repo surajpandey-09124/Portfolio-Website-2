@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" width="device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="picture/suraj.jpeg">
+    </head>
+    <body>
+        <h1 align="center">Calculator</h1><hr>
+        <div id="main">
+            <nav id="n1"></nav>
+            <button id=b1 onclick="zero()">C</button>
+            <button id=b2 onclick="display('%')">%</button>
+            <button id=b3 onclick="display('/')">/</button>
+            <button id=b4 onclick="display('1')">1</button>
+            <button id=b5 onclick="display('2')">2</button>
+            <button id=b6 onclick="display('*')">X</button>
+            <button id=b7 onclick="display('3')">3</button>
+            <button id=b8 onclick="display('4')">4</button>
+            <button id=b9 onclick="display('+')">+</button>
+            <button id=b10 onclick="display('5')">5</button>
+            <button id=b11 onclick="display('6')">6</button>
+            <button id=b12 onclick="display('-')">-</button>
+            <button id=b13 onclick="display('7')">7</button>
+            <button id=b14 onclick="display('8')">8</button>
+            <button id=b15 onclick="display('.')">.</button>
+            <button id=b16 onclick="display('9')">9</button>
+            <button id=b17 onclick="display('0')">0</button>
+            <button id=b18 onclick="result()">=</button>
+        </div>
+        <script>
+
+            var data='';
+
+            function display(x){
+                data=data+x;
+                var box=document.getElementById('n1').innerHTML=data;
+            }
+
+            function result(){
+                var result=eval(data);
+                var box=document.getElementById('n1').innerHTML=result;
+                data=result;
+            }
+
+            function zero(){
+                data='';
+                var box=document.getElementById('n1').innerHTML=('');
+            }
+
+            // function show(){
+            //     var one=document.getElementById('b4').value;
+            //     var box=document.getElementById('n1').innerHTML=('1');
+            //     }
+
+            // function show2(){
+            //     var two=document.getElementById('b5').value;
+            //     var box=document.getElementById('n1').innerHTML=('2');                
+            // }
+            
+            // function show3(){
+            //     var two=document.getElementById('b7').value;
+            //     var box=document.getElementById('n1').innerHTML=('3');                
+            // }
+            
+            // function show4(){
+            //     var two=document.getElementById('b8').value;
+            //     var box=document.getElementById('n1').innerHTML=('4');                
+            // }
+
+            // function show5(){
+            //     var two=document.getElementById('b10').value;
+            //     var box=document.getElementById('n1').innerHTML=('5');                
+            // }
+
+            // function show6(){
+            //     var two=document.getElementById('b11').value;
+            //     var box=document.getElementById('n1').innerHTML=('6');                
+            // }
+
+            // function show7(){
+            //     var two=document.getElementById('b13').value;
+            //     var box=document.getElementById('n1').innerHTML=('7');                
+            // }
+
+            // function show8(){
+            //     var two=document.getElementById('b14').value;
+            //     var box=document.getElementById('n1').innerHTML=('8');                
+            // }
+
+            // function show9(){
+            //     var two=document.getElementById('b16').value;
+            //     var box=document.getElementById('n1').innerHTML=('9');                
+            // }
+
+            // function show0(){
+            //     var two=document.getElementById('b17').value;
+            //     var box=document.getElementById('n1').innerHTML=('0');                
+            // }
+            
+            // function showadd(){
+            //     var add=document.getElementById('b9').value;
+            //     var box=document.getElementById('n1').innerHTML=('+');
+            // }
+
+            // function showmodule(){
+            //     var module=document.getElementById('b2').value;
+            //     var box=document.getElementById('n1').innerHTML=('%');
+            // }
+
+            // function showdivide(){
+            //     var divide=document.getElementById('b3').value;
+            //     var box=document.getElementById('n1').innerHTML=('/');
+            // }
+
+            // function showmultiply(){
+            //     var multiply=document.getElementById('b6').value;
+            //     var box=document.getElementById('n1').innerHTML=('X');
+            // }
+
+            // function showminus(){
+            //     var minus=document.getElementById('b12').value;
+            //     var box=document.getElementById('n1').innerHTML=('-');
+            // }
+
+            // function showdot(){
+            //     var dot=document.getElementById('b15').value;
+            //     var box=document.getElementById('n1').innerHTML=('.');
+            // }
+
+            
+</script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+*{
+    box-sizing:border-box;
+}
+
+h1{
+    color:#aaa;
+}
+
+#main{
+    width:350px;
+    height:460px;
+    border:2px groove #ccc;
+    margin:50px auto;
+    border-radius:10px;
+}
+
+#n1{
+    width:95%;
+    height:100px;
+    border:2px groove #ccc;
+    margin:10px 0 0 8px;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9,#b10,#b11,#b12,#b13,#b14,#b15,#b16,#b17,#b18{
+    width:25%;
+    height:30px;
+    color:white;
+    background:black;
+    border-radius:10px;
+    font-weight:bold;
+    margin:20px 0 5px 17px;
+    font-size:20px;
+}

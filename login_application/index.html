@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="picture/suraj.jpeg">
+  </head>
+  <body>
+    <header>
+      <div class="page">
+        <!-- login  -->
+        <div class="login animate__animated animate__flipInY">
+          <h1 align="center">Login</h1>
+          <form class="login-form" autocomplete="off">
+            <input type="email" required="required" name="username" placeholder="Email Id" class="login-email"><small class="login-msg"><i class="fa-solid fa-triangle-exclamation"></i> E-mail Id does not exist !</small>
+            <input type="password" required="required" name="password" placeholder="Password" class="login-pass"><small class="pass-msg"><i class="fa-solid fa-triangle-exclamation"></i> Wrong Password !</small>
+            <input type="submit" value="Login" class="login-btn">
+          </form>
+          <p>Don't have a account? <span class="login-span">Sign up</span></p>
+        </div>
+        <!-- sign up -->
+        <div class="signup animate__animated animate__flipInY">
+          <h1 align="center">Sign up</h1>
+          <form autocomplete="off" class="signup_form">
+            <input type="name" required="required" placeholder="Name" class="username">
+            <input type="email" required="required" placeholder="Email Id" class="email">
+            <small class="email-msg"><i class="fa-solid fa-triangle-exclamation"></i> E-mail already exist.</small>
+            <input type="number" required="required" placeholder="Phone No" class="phone">
+            <input type="password" required="required" placeholder="Password" class="password">
+            <button type="submit" class="btn">Sign up</button>
+          </form>
+          <p>Already have an account? <span class="signup-span">Login</span></p>
+        </div>
+      </div>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>

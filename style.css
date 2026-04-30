@@ -1,0 +1,311 @@
+*{
+  padding:0; 
+  margin:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#ccc;
+  font-family:centurygothic;
+}
+
+header{
+  display:flex;
+  justify-content:space-evenly;
+}
+
+.h1{
+  width:30%;
+  height:700px;
+  border-radius:20px;
+  background:#f5f6f7;
+  margin-top:30px;
+}
+
+.h2{
+  width:50%;
+  height:auto;
+  background:#f5f6f7;
+  border-radius:20px;
+  margin-top:30px;
+}
+
+.profile{
+  text-align:center;
+  margin-top:20px;
+  /* border-bottom:1px groove #ccc; */
+  /* padding:10px; */
+}
+
+.profile img{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+}
+
+.profile h1{
+  margin:10px 10px;
+}
+
+.profile h3{
+  color:orange;
+}
+
+.contact{
+  margin:50px;
+}
+
+.contact p{
+  color:black;
+  font-weight:800;
+  margin:10px;
+  font-size:large;
+}
+
+.contact address{
+  color:navy;
+  margin-left:7px;
+  font-weight:700;
+}
+
+.social{
+  margin:60px 0 0 120px;
+}
+
+.social img{
+  width:15%;
+  padding:5px;
+  filter:grayscale(1) invert(0.7);
+  transition:filter 0.3s ease;
+}
+
+.social img:hover{
+    filter:grayscale(0) invert(0);
+}
+
+.nav{
+  margin:30px;
+  display:flex;
+  justify-content:end;
+  align-items:center;
+}
+
+.nav a{
+  text-decoration:none;
+  padding:10px;
+  font-size:20px;
+  color:navy;
+  transition:color 0.3s ease;
+}
+
+.nav a:hover{
+  color:orange;
+}
+
+#main{
+  margin:50px;
+}
+#main h2{
+  color:black;
+  padding:10px;
+}
+
+#main p{
+  text-align:justify;
+  padding:10px;
+  color:navy;
+  line-height:25px;
+  font-size:18px;
+}
+
+.square{
+  width:10%;
+  height:7px;
+  background:orange;
+  margin:0 0 0 10px;
+}
+
+#skills{
+  margin:50px;
+}
+
+#skills h2{
+  color:black;
+  padding:10px;
+}
+
+.pic{
+  display:flex;
+  justify-content:space-evenly;
+  margin-top:50px;
+}
+
+
+.pic1{
+  width:120px;
+  height:140px;
+  border-radius:20px;
+  border:2px groove #e0e0e0;
+  padding-top:15px;
+  text-align:center;
+  color:navy;
+}
+
+.pic1 img{
+  width:80%;
+  transition:transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+.pic1:hover{
+  transform:scale(1.1);
+    box-shadow:0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+#certification{
+  margin:50px;
+}
+
+#certification h2{
+  padding:10px;
+}
+
+#certification li{
+  color:navy;
+  margin:20px 0 0 30px;
+
+}
+
+#education{
+  margin:50px;
+}
+
+#education h2{
+  color:black;
+  padding:10px;
+}
+
+#education p,li{
+  text-align:justify;
+  color:navy;
+  margin:10px 0 0 20px;
+}
+
+#education,.e1{
+  padding:10px;
+}
+
+/* project */
+#project{
+  margin:50px;
+}
+
+#project h2{
+  padding:10px;
+}
+
+#project .w{
+  display:flex;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
+}
+
+#project .w div{
+  width:300px;
+  height:200px;
+  border:2px groove #e0e0e0;
+  margin-top:50px;
+  padding:10px;
+  transition:transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+#project .w div:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+#project img{
+  width:100%;
+  height:180px;
+  /* padding:10px; */
+}
+
+#project p{
+  margin:10px;
+  color:orange;
+  text-align:center;
+  font-weight:600;
+}
+
+
+@media (max-width: 768px){
+
+  /* Header full stack */
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .h1, .h2{
+    width:60%;
+    margin:10px 0;
+    height:auto;   /* ❗ remove fixed height */
+  }
+
+  /* Profile image fix */
+  .profile img{
+    width:120px;
+    height:120px;
+  }
+
+  /* Contact spacing */
+  .contact{
+    margin:20px;
+    text-align:center;
+  }
+
+  /* Social FIX (main issue yahi hai) */
+  .social{
+    margin:20px auto;
+    text-align:center;
+  }
+
+  .social img{
+    width:30px;   /* ❗ percentage hatao */
+  }
+
+  /* Navbar wrap */
+  .nav{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  /* Sections margin reduce */
+  #main, #skills, #certification, #education, #project{
+    margin:15px;
+  }
+
+  /* Skills FIX */
+  .pic{
+    flex-wrap:wrap;
+    gap:15px;
+  }
+
+  .pic1{
+    width:30%;   /* ❗ 2 column layout */
+  }
+
+  /* Projects FIX */
+  #project .w{
+    flex-wrap:wrap;
+    gap:15px;
+  }
+
+  #project .w div{
+    width:80%;   /* ❗ full width */
+    height:auto;
+  }
+
+  #project img{
+    height:auto;
+  }
+}

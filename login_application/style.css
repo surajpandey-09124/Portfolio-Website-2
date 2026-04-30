@@ -1,0 +1,123 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+
+body{
+  background: #8BDEDA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EF9393, #E17DC2, #998EE0, #43ADD0, #8BDEDA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EF9393, #E17DC2, #998EE0, #43ADD0, #8BDEDA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.page{
+  width:310px;
+  height:auto;
+  background:white;
+  box-shadow:0px 0px 10px #ccc;
+  border-radius:15px;
+  padding:50px;
+}
+
+/* login */
+
+.login .login-form{
+  margin-top:20px;
+}
+
+.login .login-email,.login-pass{
+  padding:10px;
+  border:none;
+  border-bottom:1px solid #ccc;
+  width:100%;
+  margin-top:20px;
+  font-size:16px;
+  outline:none;
+  color:gray;
+}
+
+.login-btn{
+  width:100%;
+  border:none;
+  font-size:16px;
+  padding:10px;
+  background: #6025F5;
+  color:white;
+  cursor:pointer;
+  margin-top:30px;
+background: linear-gradient(90deg, rgba(96, 37, 245, 0.2) 1%, rgba(255, 85, 85, 0.2) 100%);
+}
+
+.login p{
+  margin-top:20px;
+  text-align:center;
+}
+
+.login .login-span{
+  cursor:pointer;
+  color:blue;
+}
+
+
+/* sign up */
+
+.signup{
+  display:none;
+}
+
+.signup form{
+  margin-top:20px;
+}
+
+.signup input{
+  border:none;
+  border-bottom:1px solid #ccc;
+  padding:10px;
+  width:100%;
+  margin-top:20px;
+  font-size:16px;
+  outline:none;
+  color:gray;
+}
+
+.signup .btn{
+  width:100%;
+  border:none;
+  font-size:16px;
+  padding:10px;
+  background: #6025F5;
+  color:white;
+  cursor:pointer;
+  margin-top:30px;
+background: linear-gradient(90deg, rgba(96, 37, 245, 0.2) 1%, rgba(255, 85, 85, 0.2) 100%);
+}
+
+.email-msg{
+  color:red;
+  display:none;
+  margin-top:5px;
+}
+
+.signup p{
+  margin-top:20px;
+  text-align:center;
+}
+
+.signup .signup-span{
+  cursor:pointer;
+  color:blue;
+}
+
+/* login */
+.login-msg,.pass-msg{
+  color:red;
+  margin-top:5px;
+  display:none;
+}
