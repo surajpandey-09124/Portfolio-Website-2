@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="icon" href="picture/suraj.jpeg">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+        <h1 align="center" id="head">Address Maker</h1>
+        <p align="center" id="head2">An Online Address Creater Tool</p><hr>
+        </header>
+        <section>
+            <h1 id="s1">Type Your Information Here</h1>
+            <form>
+                Name:<br><input id="s2" type="text" name="name"><br><br>
+                Mobile No:<br><input id="s3" type="number" name="phone"><br><br>
+                Alternate Mobile No:<br><input id="s4" type="number" name="phone"><br><br>
+                Father's name:<br><input id="s5" type="text" name="fname"><br><br>
+                E-mail:<br><input id="s6" type="email" name="email"><br><br>
+                Address:<br><textarea id="s7" type="address" name="address"></textarea><br><br>
+                <input id="s8" type="button" value="MAKE" onclick="show()">
+            </form>
+            <div id="s9">
+                <p id="d5"></p>
+                <ul>
+                    <li id="d1" onclick="show2()">Print</li>
+                    <li id="d2" onclick="show3()">Bold</li>
+                    <li id="d3" onclick="show4()">Italic</li>
+                    <li id="d4" onclick="show5()">Undo</li>
+                </ul>
+            </div>
+        </section>
+        <script>
+            function show(){
+                var name=document.getElementById('s2').value;               
+                var phone=document.getElementById('s3').value;                
+                var aphone=document.getElementById('s4').value;                
+                var fname=document.getElementById('s5').value;                
+                var email=document.getElementById('s6').value;                
+                var address=document.getElementById('s7').value;
+                
+                var combine= "Name: "+name+"<br>"+"Phone No: "+phone+"<br>"+"Alternate No: "+aphone+"<br>"+
+                "Father's name: "+fname+"<br>"+"E-mail: "+email+"<br>"+"Address: "+address+"<br>";
+
+                var result=document.getElementById('d5').innerHTML=(combine);
+            }
+
+            function show2(){
+                var a=document.getElementById('d5');
+                window.print();
+            }
+
+            function show3(){
+                var a=document.getElementById('d5');
+                a.style.fontWeight='bold';
+            }
+
+            function show4(){
+                var a=document.getElementById('d5');
+                a.style.fontStyle='italic';
+            }
+
+            function show5(){
+                var a=document.getElementById('d5');
+                a.style.fontWeight='normal';
+                a.style.fontStyle='normal';
+            }
+        </script>
+    </body>
+</html>
